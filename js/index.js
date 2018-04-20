@@ -1,12 +1,12 @@
 /**
  * 添加交互动画
  */
-let addAnimation = currentPosition => {
-  let pages = document.querySelectorAll('.page');
+var addAnimation = function(currentPosition) {
+  var pages = document.querySelectorAll('.page');
   pages = Array.prototype.slice.call(pages);
-  const viewHeight = document.documentElement.clientHeight;
+  var viewHeight = document.documentElement.clientHeight;
   // i 表示当前页面的索引
-  let i = -(currentPosition / viewHeight);
+  var i = -(currentPosition / viewHeight);
 
   /**
    * TODO：每次进入当前页面都会执行下面代码，
